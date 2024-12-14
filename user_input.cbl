@@ -1,0 +1,24 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. USER_INPUT.
+       AUTHOR. IshmamR.
+
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 NAME PIC x(16).
+       01 AGE  PIC 9(2).
+
+       PROCEDURE DIVISION.
+       PERFORM 01-TAKE-INPUTS.
+       PERFORM 01-SHOW-OUTPUTS.
+       STOP RUN.
+       
+       01-TAKE-INPUTS.
+       DISPLAY "ENTER YOUR NAME:".
+       ACCEPT NAME.
+
+       DISPLAY "ENTER YOUR AGE:".
+       ACCEPT AGE.
+       
+       01-SHOW-OUTPUTS.
+       DISPLAY "HELLO "NAME"!".
+       DISPLAY "YOUR AGE IS "AGE.
